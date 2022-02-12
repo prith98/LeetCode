@@ -12,12 +12,10 @@ var longestCommonPrefix = function(strs) {
     
     let counter = 0;
     
-    while (counter < strs[0].length) {
-        
+    while (counter < strs[0].length) {        
         let filterArr = strs.filter((word) => {
             return word[counter] === strs[0][counter]
-        })
-        
+        })        
         if (filterArr.length !== strs.length) {
             return returnStr;
         } else {
@@ -25,9 +23,5 @@ var longestCommonPrefix = function(strs) {
             counter++;
         }
     }
-    
-    return returnStr
-    
-    
-    
+    return returnStr   
 };
