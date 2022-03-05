@@ -1,8 +1,9 @@
 /**
- * @param {number[]} nums
+ * @param {number[]} arr
  * @return {number[]}
  */
 var sortedSquares = function(nums) {
+  
     let sorted = true;
     
     for (let i = 0; i < nums.length; i++) {
@@ -18,4 +19,5 @@ var sortedSquares = function(nums) {
     } else {
         return sortedSquares(nums)
     }
+    
 };
