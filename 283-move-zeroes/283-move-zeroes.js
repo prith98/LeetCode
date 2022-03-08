@@ -4,14 +4,15 @@
  */
 var moveZeroes = function(nums) {
   
-    let pointer = 0
-    for (let i in nums){
-        if (nums[i] !== 0){
-            [nums[pointer], nums[i]] = [nums[i], nums[pointer]]
-            pointer++
-        }
-    }
-    return nums
+  let counter = 0;
   
+  for (let i in nums) {
+    if (nums[i] !== 0) {
+      [nums[counter], nums[i]] = [nums[i], nums[counter]]
+      counter++
+    }
+  }
+  
+  return nums
   
 };
