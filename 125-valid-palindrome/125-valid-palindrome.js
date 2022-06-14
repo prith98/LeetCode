@@ -12,7 +12,7 @@ var isPalindrome = function(s) {
     }
   }
   
-  newS = newS.split("");
+  newS = newS.split("").join();
   
   for (let i = 0, j = newS.length - 1; i < j; i++, j--) {
     if (newS[i] !== newS[j]) {
